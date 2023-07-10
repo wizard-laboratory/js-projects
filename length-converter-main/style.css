@@ -1,0 +1,51 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+body {
+    background-color: #191E24;
+}
+form {
+    width: 300px;
+    height: 35vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    background: #fff;
+}
+h2 {
+    text-align: center;
+}
+span p {
+    text-align: center;
+}
+.around {
+    height: 30px;
+    border: 1px solid #212122;
+    background: #fff;
+    font-size: 20px;
+}
+.btn {
+    background: #007BFF;
+    border: none;
+    width: 165px;
+    height: 30px;
+    font-size: 20px;
+}
+#formula {
+    font-size: 20px;
+}
+#toValue {
+    font-size: 30px;
+    margin-top: -5px;
+}
+h2, p, #formula, .btn {
+    color: #000;
+}
