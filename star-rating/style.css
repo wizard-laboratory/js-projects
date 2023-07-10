@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.section {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    z-index: 999;
+}
+body {
+    background: #191E24;
+    height: 100vh;
+}
+.star-widget input {
+    display: none;
+}
+.star-widget label {
+    font-size: 35px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all .2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+input:checked ~ label {
+    color: #fd4;
+    
+}
+#rate-1:checked ~ .rating-desc:before {
+    content: "Poor💩";
+}
+#rate-2:checked ~ .rating-desc:before {
+    content: "Not bad😅";
+}
+#rate-3:checked ~ .rating-desc:before {
+    content: "Average😶";
+}
+#rate-4:checked ~ .rating-desc:before {
+    content: "Good😋";
+}
+#rate-5:checked ~ .rating-desc:before {
+    content: "Excellent🤩";
+}
+.rating-desc {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+ .btn {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+ .btn button {
+    height: 100%;
+    width: 60%;
+    outline: none;
+    background: #007BFF;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+.star-rating-bx {
+   /* background-color: #fff;*/
+    box-shadow: 0px 4px 40px 0px rgb(0 0 0 / 5%);
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 999;
+    background: rgba( 255, 255, 255, 0.09 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+@media (max-width:576px) {
+    .star-rating-bx {
+        padding:20px 15px;
+    }
+}
+.star-icon {
+    padding-bottom: 20px;
+}
+.modal-title {
+    font-weight: 400;
+}
+#error-comment,
+#error-rating {
+    color: red;
+}
+.circle1, .circle2 {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+}
+.circle1 {
+    background: linear-gradient(90deg, #FF512F 0%, #F09819 100%);
+    bottom: 18%;
+    left: 37%;
+}
+.circle2 {
+    background: linear-gradient(90deg, #BF5AE0 0%, #A811DA 100%);  
+    top: 20%;
+    right: 38%;
+}
+h2, .rating-desc {
+    color: #fff;
+    text-align: center;
+}

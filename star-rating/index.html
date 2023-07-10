@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+        <section class="section">
+          <div class="star-rating-bx">
+              <h2 class="text-center">Feedback</h2>
+              <div class="star-widget">
+                  <form method="GET" name="feedback" action="#">
+                  <input type="radio" name="star" id="rate-5" value="5">
+                  <label for="rate-5" class="fa-solid fa-star"></label>
+                  <input type="radio" name="star" id="rate-4" value="4">
+                  <label for="rate-4" class="fa-solid fa-star"></label>
+                  <input type="radio" name="star" id="rate-3" value="3">
+                  <label for="rate-3" class="fa-solid fa-star"></label>
+                  <input type="radio" name="star" id="rate-2" value="2">
+                  <label for="rate-2" class="fa-solid fa-star"></label>
+                  <input type="radio" name="star" id="rate-1" value="1">
+                  <label for="rate-1" class="fa-solid fa-star"></label><br>
+                  <p class="rating-desc"></p>
+                  <div class="btn">
+                    <button href = "#" type="submit" onclick="feedBack()">Submit</button>
+                </div>
+                  </form>
+              </div>
+          </div>
+      </section>
+  </body>
+</html>
