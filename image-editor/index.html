@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="green">
+      <div class="nav-wrapper container">
+          <ul class="right image-save">
+              <button class="btn btn-flat blue white-text"
+                      onclick="saveImage()">
+                Save
+              </button>
+              <button class="btn btn-flat red white-text"
+                      onclick="resetImage()">
+                Reset
+              </button>
+          </ul>
+      </div>
+  </nav>
+
+  <!-- Hidden image that will be used for
+  holding the source image -->
+  <div class="container">
+    <div class = "img">
+      <div class = "none"></div>
+      <img id="sourceImage" crossorigin="anonymous"/>
+    <div class="image-preview">
+  
+        <!-- Canvas that will hold the
+        image to be edited -->
+        <canvas id="canvas"></canvas>
+    </div>
+    </div>
+    
+      <div class="help-text center-align">
+      </div>
+
+      <!-- All the image controls that will be
+      used for modifying the image -->
+      <div class="image-controls">
+                  <span class="range-field">
+                      <label for="brightnessSlider">
+                        Brightness
+                      </label><br>
+                      <input id="brightnessSlider"
+                             type="range" value="100"
+                             min="0" max="300"
+                             onchange="applyFilter()">
+                  </span><br>
+ 
+                  <span class="range-field">
+                      <label for="contrastSlider">
+                        Contrast
+                      </label><br>
+                      <input id="contrastSlider"
+                             type="range" value="100"
+                             min="0" max="200"
+                             onchange="applyFilter()">
+                  </span>
+
+                  <span class="range-field"><br>
+                      <label for="grayscaleSlider">
+                        Grayscale
+                      </label><br>
+                      <input id="grayscaleSlider"
+                             type="range" value="0"
+                             min="0" max="100"
+                             onchange="applyFilter()">
+                  </span>
+                  <span class="range-field"><br>
+                      <label for="saturationSlider">
+                        Saturation
+                      </label><br>
+                      <input id="saturationSlider"
+                             type="range" value="100"
+                             min="0" max="300"
+                             onchange="applyFilter()">
+                  </span>
+      </div>
+
+      <!-- File control to upload a new file -->
+      <div class="file-controls">
+         
+          <!-- Element that will be later used to download
+          the canvas image from code -->
+          <a id="link"></a>
+         
+          <!-- File Selector for uploading the image -->
+          <div class="file-field input-field">
+              <div class="btn green">
+                         <label for="file-upload" class="custom-file-upload">
+                          Upload new
+                      </label>
+                      <input id="file-upload" type="file" accept="image/*"
+                      onchange="uploadImage(event)"/>
+
+                      <button class="saveimage" onclick="saveImage()">Save</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

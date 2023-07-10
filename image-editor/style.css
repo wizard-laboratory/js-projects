@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@500&display=swap');
+* {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+}
+.nav-header {
+	font-size: 1.5rem;
+}
+#sourceImage,
+.image-controls,
+.image-save,
+.preset-filters {
+	display: none;
+}
+#canvas {
+  width: 300px;
+  height: 300px;
+  margin-top: 7%;
+  display: inline-block;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+label {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin-left: 23px
+}
+.image-preview {
+  margin-left: 23px;
+  margin-right: 23px;
+  display: inline-block;
+}
+.container {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 630px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  border-radius: 5px;
+}
+h1 {
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 139%;
+  letter-spacing: -1.95px;
+}
+.row {
+  text-transform: uppercase;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 139%;
+  letter-spacing: -0.51px;
+}
+.nav-wrapper {
+  display: none;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0 18px 23px;
+  width: 86.5%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 1.3px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 25px;
+  width: 10px;
+  background: #5372F0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #5372F0;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #fc0;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #5372F0;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #5372F0;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #fc0;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #5372F0;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #5372F0;
+}
+.input-field input {
+  background-color: red;
+}
+#file {
+  background-color: #fc0;
+  width: 150px;
+  height: 50px;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload, .saveimage {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-transform:capitalize;
+  background-color: #5372F0;
+}
+.custom-file-upload {
+  padding: 6px 12px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+.saveimage {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  right: 23px;
+  bottom: 10px;
+}
+.none {
+  width: 300px;
+  height: 300px;
+  margin-top: 7%;
+  margin-left: 23px;
+  margin-right: 23px;
+  background: url("placeholder.jpg") no-repeat center center/cover;
+  display: block;
+}
