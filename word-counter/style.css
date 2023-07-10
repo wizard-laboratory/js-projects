@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #191E24;
+}
+.main, .block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.card {
+    background: #191E24;
+    width: 540px;
+    height: 675px;
+    border-radius: 10px;
+}
+.circle1, .circle2 {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+}
+.circle1 {
+    background: linear-gradient(90deg, #FF512F 0%, #F09819 100%);
+    bottom: 8%;
+    left: 8%;
+}
+.circle2 {
+    background: linear-gradient(90deg, #BF5AE0 0%, #A811DA 100%);  
+    top: 8%;
+    right: 8%;
+}
+.block {
+    width: 360px;
+    height: 481px;
+    background: rgba( 255, 255, 255, 0.09 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    z-index: 999;
+    text-align: center;
+}
+.block h1 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 50px 0 0 0;
+}
+.block h2 {
+    color: rgba(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 4.2px;
+    margin: 5px 0 0 0;
+}
+.block h1, .block h2 {
+    text-align: center;
+    font-family: Montserrat;
+    background: transparent;
+}
+input, label {
+    width: 70%;
+    height: 5vw;
+    text-align: center;
+    background: #fff;
+    border: none;
+    margin-top: 10%;
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+input {
+    width: 70%;
+    height: 5vw;
+}
+label {
+    background: none;
+    color: #fff;
+    display: inline-block;
+}
